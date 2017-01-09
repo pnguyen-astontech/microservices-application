@@ -1,0 +1,83 @@
+<div class="container">
+    <div class="col-md-10">
+        <h2>Create Account</h2>
+    </div>
+    <div id="main-wrapper" class="col-sm-8">
+
+        <div class="col-xs-6">
+            <form class="form-horizontal form-group-sm lb-sm">
+                <fieldset>
+
+                    <div class="form-group">
+                        <label class="col-xs-12">Name</label>
+                        <div class="col-xs-6">
+                            <input class="form-control" type="text" ng-model="first_name" placeholder="First"/>
+                        </div>
+
+                        <div class="col-xs-6">
+                            <input class="form-control" type="text" ng-model="last_name" placeholder="Last"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-12">Choose your username</label>
+                        <div class="col-xs-12">
+                            <input class="form-control" type="text" ng-model="username"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-12">Create password</label>
+                        <div class="col-xs-12">
+                            <input class="form-control" type="password" ng-model="password"/>
+                            <span class="help-block">Help text goes here...</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-12">Confirm password</label>
+                        <div class="col-xs-12">
+                            <input class="form-control" type="password" ng-model="confirm_password"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-12">Birthday</label>
+                        <div class="col-xs-4">
+                            <input class="form-control" type="text" ng-model="bDay" placeholder="Day"/>
+                        </div>
+                        <div class="col-xs-4">
+                            <input class="form-control" type="text" ng-model="bMonth" placeholder="Month"/>
+                        </div>
+                        <div class="col-xs-4">
+                            <input class="form-control" type="text" ng-model="bYear" placeholder="Year"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-12">Gender</label>
+                        <div class="col-xs-12">
+                            <input class="form-control" type="text" ng-model="gender"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-xs-12">Email address</label>
+                        <div class="col-xs-12">
+                            <input class="form-control" type="text" ng-model="email_address"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button ng-click="userCtrl.clearFields()" class="btn btn-default">Cancel</button>
+                        <button ng-click="userCtrl.addUser()" class="btn btn-primary">Save</button>
+                    </div>
+                </fieldset>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

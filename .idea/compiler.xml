@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="app-consumer" />
+        <module name="configuration-server" />
+        <module name="eureka-server" />
+        <module name="food-calories-service" />
+        <module name="hystrix-dashboard" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="app-consumer" target="1.8" />
+      <module name="configuration-server" target="1.6" />
+      <module name="edge-service" target="1.6" />
+      <module name="eureka-server" target="1.6" />
+      <module name="food-calories-service" target="1.6" />
+      <module name="hystrix-dashboard" target="1.6" />
+      <module name="state-service" target="1.6" />
+      <module name="user-service" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
+
